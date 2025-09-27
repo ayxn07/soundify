@@ -10,8 +10,6 @@ A Spotify-style music app built with **Flutter** and **BLoC** for reactive, test
 
 ## 📸 Screenshots / Demo
 
-> Replace the placeholders below with real images (PNG/JPG/GIF). Recommended widths: 1080px for phones, 1920px for web.
-
 | Home                               | Now Playing                                      | Library                                  | Splash                                 |
 | ---------------------------------- | ------------------------------------------------ | ---------------------------------------- | -------------------------------------- |
 | ![Home](assets/Home-Page.jpeg) | ![Now Playing](assets/Music-Player.jpeg) | ![Library](assets/Music-List.jpeg) | ![Search](assets/Splash-Screen.jpeg) |
