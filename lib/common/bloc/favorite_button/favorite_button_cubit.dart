@@ -1,0 +1,18 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:spotify_app_clone/common/bloc/favorite_button/favorite_button_state.dart';
+import 'package:spotify_app_clone/domain/usecases/song/add_or_remove_favorite_song.dart';
+
+import '../../../service_locator.dart';
+
+class FavoriteButtonCubit extends Cubit<FavoriteButtonState> {
+  FavoriteButtonCubit() : super(FavoriteButtonInitil());
+
+  Future<void> favoriteButtonUpdated(String songId) async {
+    var result = await sl<AddOrRemoveFavoriteSongUseCase>().call(
+      params: songId,
+    );
+    result.fold((l) {}, (isFavorite) {
+      emit(FavoriteButtonUpdated(isFavorite: isFavorite));
+    });
+  }
+}
