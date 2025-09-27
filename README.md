@@ -1,7 +1,3 @@
-Here’s a **clean, production-style `README.md`** for your repo. You can paste it into your project as-is and tweak any TODO blocks (like screenshots and environment variables).
-
----
-
 # Soundify — Flutter Spotify Clone (BLoC)
 
 A Spotify-style music app built with **Flutter** and **BLoC** for reactive, testable state management. Clean architecture, modular code, and room to grow (offline cache, playlists, queueing, etc.). ([GitHub][1])
